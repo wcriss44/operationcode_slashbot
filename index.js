@@ -199,7 +199,7 @@ controller.on('slash_command', function (slashCommand, message) {
             /* command: /android <message> */
             //TODO: Add better verification method for authorized users
         case "/android":
-            if (message.text && message.user_name == "wcriss44"){
+            if (message.text){
                 if (message.text.length < 3){
                     slashCommand.replyPrivate(message, '*Length of notification must be 3 or more characters.*');
                     return;
